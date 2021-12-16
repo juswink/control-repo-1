@@ -1,2 +1,2 @@
 ---
-packages = [ 'ntp', 'motd' ]
+packages_to_be_installed: [ "ntp", "motd" ]
