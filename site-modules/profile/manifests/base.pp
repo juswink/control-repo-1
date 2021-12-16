@@ -15,6 +15,12 @@ class profile::base {
     }
   }
   
+  if ( $facts['kernel'] == 'Windows' ) {
+    class { 'winntp':
+        servers => lookup('ntpservers'),
+    }
+  }
+  
   class { 'motd':
     content => lookup('motd'),
   }
