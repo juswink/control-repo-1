@@ -11,3 +11,4 @@ hierarchy:
       - "nodes/%{trusted.certname}.yaml"
       - "common.yaml"
       - "test.yaml"
+      - "test2.yaml"
