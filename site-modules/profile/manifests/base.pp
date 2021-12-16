@@ -4,8 +4,8 @@ class profile::base {
   
   $packages_to_be_installed = lookup('packages_to_be_installed')
   
-  $packages_to_be_installed.each | String $packages | {
-    package { $(packages):
+  $packages_to_be_installed.each | String $package | {
+    package { "${package}":
       ensure  => installed,
     }
   }
