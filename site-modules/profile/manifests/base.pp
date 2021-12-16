@@ -2,9 +2,7 @@ class profile::base {
 
   #the base profile should include component modules that will be on all nodes
   
-  $packages_to_be_installed = lookup('packages_to_be_installed')
+  include ntp
+  include motd
   
-  $packages_to_be_installed.each | String $package | {
-    include "${package}"
-  }
 }
