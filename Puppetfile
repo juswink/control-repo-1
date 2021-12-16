@@ -9,6 +9,7 @@ mod 'puppetlabs-concat', '7.1.1'
 mod 'puppetlabs-motd', '6.1.0'
 mod 'puppetlabs-ntp', '9.1.0'
 mod 'puppet-chrony', '2.1.0'
+mod 'tse-winntp', '1.0.1'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
