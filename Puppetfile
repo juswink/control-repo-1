@@ -5,6 +5,8 @@ forge 'https://forge.puppet.com'
 #mod 'puppetlabs/inifile', '5.0.1'
 mod 'puppetlabs-stdlib', '8.1.0'
 mod 'puppetlabs-concat', '7.1.1'
+mod 'puppetlabs-motd', '6.1.0'
+mod 'puppetlabs-ntp', '9.1.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
