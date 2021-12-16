@@ -15,7 +15,7 @@ class profile::base {
     }
   }
   
-  if ( $facts['kernel'] == 'Windows' ) {
+  if ( $facts['kernel'] == 'windows' ) {
     class { 'winntp':
         servers => lookup('ntpservers'),
     }
