@@ -1,0 +1,15 @@
+our_module::folders_hash:
+  finance_hash:
+    folder_name:          Finance
+    share_name:           CentralStore$
+    full_control_group:   domain\R-File-Finance-Full
+    modify_group:         domain\R-File-Finance-RW
+    read_group:           domain\R-File-Finance-RO
+    inherit_permissions:   no
+  operations_hash:
+    folder_name:          Ops
+    share_name:           CentralStore$
+    full_control_group:   domain\R-File-Ops-Full
+    modify_group:         domain\R-File-Ops-RW
+    read_group:           domain\R-File-Ops-RO
+    inherit_permissions:   no
