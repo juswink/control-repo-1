@@ -5,7 +5,8 @@ class profile::base {
   include motd
   include chrony
   
-  #class { 'chrony':
-  #  servers => lookup('ntpservers'),
-  #}
+  class { 'chrony':
+   # servers => lookup('ntpservers'),
+   servers => [ '0.sg.pool.ntp.org', '1.sg.pool.ntp.org' ],
+  }
 }
