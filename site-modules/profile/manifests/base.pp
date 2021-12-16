@@ -6,6 +6,9 @@ class profile::base {
   
   class { 'chrony':
     servers => lookup('ntpservers'),
-    #servers => [ '0.sg.pool.ntp.org', '1.sg.pool.ntp.org' ],
+  }
+  
+  class { 'motd':
+    content => lookup('motd'),
   }
 }
