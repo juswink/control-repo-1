@@ -1,2 +1,4 @@
 ---
 message: "This node is using common data"
+
+dnsservers: [ "10.0.0.1", "10.0.0.2" ]
