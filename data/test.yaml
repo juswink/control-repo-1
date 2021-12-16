@@ -1,0 +1,15 @@
+our_module::folders_hash:
+  sales_hash:
+    folder_name:          Sales
+    share_name:           CentralStore$
+    full_control_group:   domain\R-File-Sales-Full
+    modify_group:         domain\R-File-Sales-RW
+    read_group:           domain\R-File-Sales-RO
+    inherit_permissions:   no
+  hr_hash:
+    folder_name:          HR
+    share_name:           CentralStore$
+    full_control_group:   domain\R-File-HR-Full
+    modify_group:         domain\R-File-HR-RW
+    read_group:           domain\R-File-HR-RO
+    inherit_permissions:   no
