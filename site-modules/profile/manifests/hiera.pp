@@ -1,4 +1,4 @@
-class profile::hiera' {
+class profile::hiera {
   hiera_version   =>  '5',
           hiera5_defaults =>  {"datadir" => "data", "data_hash" => "yaml_data"},
           hierarchy       =>  [
