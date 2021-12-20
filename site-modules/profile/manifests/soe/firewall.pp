@@ -20,7 +20,7 @@ class profile::soe::firewall {
           action   => 'accept',
         }       
     }
-#    default: { notify { "Too bad, so sad!\n" } }
+    default: { fail ( "Too bad, so sad!\n" ) }
   }
   
 }
