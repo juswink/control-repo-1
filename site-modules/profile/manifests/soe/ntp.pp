@@ -1,7 +1,7 @@
 class profile::soe::ntp {
 
   case $facts['kernel'] {
-    #'Linux': {
+    'Linux': {
     #  case $facts['operatingsystem']['operatingsystemmajrelease'] {
     #    'CentOS', '8':  { 
     #      class { 'chrony':
@@ -14,7 +14,7 @@ class profile::soe::ntp {
           }
     #    }
     #  }
-    #}
+    }
     'windows':  { 
         class { 'winntp':
            servers => lookup('ntpservers'),
