@@ -21,6 +21,6 @@ class profile::soe::ntp {
         }
      }
     
-  default:  { notify { "Too bad, so sad!\n" }
+    default:  { notify { "Too bad, so sad!\n" } }
   }
 }
