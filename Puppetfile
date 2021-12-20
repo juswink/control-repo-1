@@ -15,6 +15,7 @@ mod 'puppetlabs-inifile', '5.2.0'
 mod 'puppetlabs-puppetserver_gem', '1.1.1'
 mod 'puppetlabs-firewall', '3.3.0'
 mod 'puppet-windows_firewall', '4.0.0'
+mod 'puppetlabs-chocolatey', '6.0.1'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
