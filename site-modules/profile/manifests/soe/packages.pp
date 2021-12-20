@@ -1,6 +1,6 @@
 class profile::soe::packages {
   
-  $facts['kernel'] == 'windows' {
+  if $facts['kernel'] == 'windows' {
       include chocolatey
   }
   $packages = lookup('packages')
