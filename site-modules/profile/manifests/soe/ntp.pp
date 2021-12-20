@@ -19,8 +19,9 @@ class profile::soe::ntp {
         class { 'winntp':
            servers => lookup('ntpservers'),
         }
-     }
+    }
     
-    default:  { notify { "Too bad, so sad!\n" } }
+    #default:  { notify { "Too bad, so sad!\n" } }
   }
+  
 }
