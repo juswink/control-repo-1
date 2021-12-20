@@ -6,5 +6,7 @@ class profile::base {
   include profile::soe::motd
   include profile::soe::ntp
   include profile::soe::remote_access
+  include profile::soe::packages
+  include profile::soe::users
   
 }
