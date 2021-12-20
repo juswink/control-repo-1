@@ -1,0 +1,2 @@
+class profile::soe::base {
+}
