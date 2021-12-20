@@ -4,16 +4,18 @@ class profile::soe::packages {
       include chocolatey
   }
   $packages = lookup('packages')
-  $packages.each |String $package| 
+  $packages.each |String $package| { 
     case $facts['kernel'] {
       'Linux': {
         package { $package:
-         ensure => latest,
+          ensure => latest,
+        }
       }
       'windows': {
         package { $package:
-         ensure => latest,
-         provider => 'chocolatey',
+          ensure => latest,
+          provider => 'chocolatey',
+        }
       }
     }
   }
