@@ -13,6 +13,7 @@ mod 'tse-winntp', '1.0.1'
 #mod 'puppet-hiera', '4.0.0'
 mod 'puppetlabs-inifile', '5.2.0'
 mod 'puppetlabs-puppetserver_gem', '1.1.1'
+mod 'puppetlabs-firewall', '3.3.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
