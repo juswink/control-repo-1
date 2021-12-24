@@ -15,6 +15,7 @@ class profile::soe::packages {
         package { $package:
           ensure => latest,
           provider => 'chocolatey',
+          install_options => ['-y']
         }
       }
     }
