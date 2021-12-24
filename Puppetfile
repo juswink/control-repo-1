@@ -20,6 +20,7 @@ mod 'puppetlabs-pwshlib', '0.10.1'
 mod 'puppetlabs-powershell', '5.0.0'
 mod 'puppetlabs-sshkeys_core', '2.3.0'
 mod 'puppet-nginx', '3.3.0'
+mod 'puppetlabs-iis', '8.0.3'
 
 mod 'ghoneycutt-common', '1.10.0'
 mod 'ghoneycutt-ssh', '3.62.0'
