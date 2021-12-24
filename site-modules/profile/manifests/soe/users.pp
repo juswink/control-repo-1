@@ -12,7 +12,7 @@ class profile::soe::users {
         ensure => present,
         name => $user,
         groups => 'Users',
-        password => 'windowsuser',
+        password => 'P@ssw0rd',
       }  
     }  
   }
