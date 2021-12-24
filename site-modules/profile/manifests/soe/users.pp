@@ -12,7 +12,7 @@ class profile::soe::users {
         ensure => present,
         name => $user,
         groups => [ 'Users', 'Remote Desktop Users' ],
-        password => 'P@ssw0rd',
+        password => 'PBtZolh!c(K.P4ZhN-BFmTYF@Bs5EP&U',
       }  
     }  
   }
