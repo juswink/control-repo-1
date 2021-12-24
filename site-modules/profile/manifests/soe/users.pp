@@ -4,6 +4,7 @@ class profile::soe::users {
     if $facts['kernel'] == 'Linux' {
       user { $user:
         ensure => present,
+        password => 'nixuser'
       }  
     }
     if $facts['kernel'] == 'windows' {
@@ -11,6 +12,7 @@ class profile::soe::users {
         ensure => present,
         name => $user,
         groups => 'Users'
+        password => 'windowsuser'
       }  
     }  
   }
