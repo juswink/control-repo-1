@@ -1,1 +1,8 @@
-
+---
+nginx::nginx_servers:
+  'vhost1.com':
+    www_root: '/var/www/vhost1.com'
+    port: 8080
+  'vhost2.com':
+    www_root: '/var/www/vhost2.com'
+    port: 8000
