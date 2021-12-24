@@ -3,6 +3,6 @@ class profile::app::webserver::iis {
 
   iis_feature { $iis_features:
     ensure => 'present',
-    include_management_tools => true,
+    include_management_tools
   }
 }
