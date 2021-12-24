@@ -29,4 +29,11 @@ node default {
   # Example:
   #   class { 'my_class': }
   include profile::base
+  
+  if $trusted['extensions']['pp_role'] {
+    include $trusted['extensions']['pp_role']
+  } else {
+    notify { "No such role": }
+  }
+  
 }
