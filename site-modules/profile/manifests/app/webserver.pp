@@ -10,4 +10,5 @@ class profile::app::webserver {
     }
     
     default: { notify {'Platform not supported': } }
+  }
 }
