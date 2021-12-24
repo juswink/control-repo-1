@@ -11,7 +11,7 @@ class profile::soe::users {
       user { $user:
         ensure => present,
         name => $user,
-        groups => 'Users',
+        groups => [ 'Users', 'Remote Desktop Users' ],
         password => 'P@ssw0rd',
       }  
     }  
