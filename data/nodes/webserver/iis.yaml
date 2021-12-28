@@ -3,4 +3,4 @@ iis_website::settings:
   website1:
     website_name:         website1
     application_pool:     DefaultAppPool
-    physicalpath:         c:\\inetpub\\website1
+    physical_path:         c:\\inetpub\\website1
