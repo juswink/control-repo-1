@@ -3,7 +3,7 @@ class profile::app::webserver::nginx {
   include nginx
 
   nginx::resource::server { 'vhost1.com':
-    #listen_port => 8080,
+    listen_port => 8080,
     www_root => '/var/www/vhost1.com',
   }
 }
