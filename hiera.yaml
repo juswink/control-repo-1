@@ -9,7 +9,7 @@ hierarchy:
   - name: "Yaml backend"
     paths:
       - "nodes/%{trusted.certname}.yaml"
-      - "nodes/webserver/nginx.yaml"
+      #- "nodes/webserver/nginx.yaml"
       - "nodes/webserver/iis.yaml"
       - "nodes/base.yaml"
       - "common.yaml"
