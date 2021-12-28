@@ -7,7 +7,7 @@ class profile::app::webserver::iis {
   
   iis_site { 'Default Web Site':
     ensure  => absent,
-    require => iis_feature['Web-WebServer'],
+    #require => iis_feature['Web-WebServer'],
   }
   
   iis_site { 'minimal':
