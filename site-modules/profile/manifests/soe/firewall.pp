@@ -16,7 +16,7 @@ class profile::soe::firewall {
         #  dport    => 80,
         #  proto    => 'tcp',
         #  action   => 'accept',
-        }
+        #}
     }
     'windows':  {
         class { 'windows_firewall':
