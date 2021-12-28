@@ -14,10 +14,10 @@ class profile::app::webserver::iis {
     ensure          => 'started',
     physicalpath    => 'c:\\inetpub\\minimal',
     applicationpool => 'DefaultAppPool',
-    require         => [
-      File['minimal'],
-      iis_site['Default Web Site']
-    ],
+    #require         => [
+    #  File['minimal'],
+    #  iis_site['Default Web Site']
+    #],
   }
 
   file { 'minimal':
