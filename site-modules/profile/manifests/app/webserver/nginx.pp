@@ -4,6 +4,6 @@ class profile::app::webserver::nginx {
 
   nginx::resource::server { 'vhost1.com':
     listen_port => 8080,
-    www_root => '/var/www/vhost1.com',
+    www_root => '/var/www/vhost1.com/html',
   }
 }
