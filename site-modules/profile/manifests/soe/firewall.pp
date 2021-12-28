@@ -11,7 +11,12 @@ class profile::soe::firewall {
           dport    => 22,
           proto    => 'tcp',
           action   => 'accept',
-        }       
+        }
+        firewall { '020 Allow inbound HTTP':
+          dport    => 80,
+          proto    => 'tcp',
+          action   => 'accept',
+        }
     }
     'windows':  {
         class { 'windows_firewall':
@@ -40,6 +45,18 @@ class profile::soe::firewall {
           remote_port  => 'any',
           display_name => 'Remote Desktop Protocol-In',
           description  => 'Inbound rule for Remote Desktop Protocol. [TCP 3389]',
+        }
+        
+        windows_firewall::exception { 'HTTP':
+          ensure       => present,
+          direction    => 'in',
+          action       => 'allow',
+          enabled      => true,
+          protocol     => 'TCP',
+          local_port   => 80,
+          remote_port  => 'any',
+          display_name => 'HTTP-In',
+          description  => 'Inbound rule for HTTP. [TCP 80]',
         }
     }
     default: { fail ( "Too bad, so sad!\n" ) }
