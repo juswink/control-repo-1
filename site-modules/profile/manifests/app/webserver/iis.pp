@@ -24,4 +24,15 @@ class profile::app::webserver::iis {
     ensure => 'directory',
     path   => 'c:\\inetpub\\minimal',
   }
+  
+  $website_hash = lookup('iis_website::settings')
+  
+  $website_hash.each | $website | {
+    $website_name = $website[1][website_name]
+    $application_pool = $website[1][application_pool]
+    $physical_path = $website[1][physical_path]
+    notify { $website_name: }
+    notify { $application_pool: }
+    notify { $physical_path: }
+  }
 }
