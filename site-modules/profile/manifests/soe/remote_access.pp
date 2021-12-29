@@ -3,7 +3,7 @@ class profile::soe::remote_access {
     # 'Linux': {
        #ssh::sshd_config_allowusers {}
      #}
-     '#windows': {
+     #'windows': {
      #}
    #}
 }
