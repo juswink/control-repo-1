@@ -23,6 +23,7 @@ mod 'puppet-nginx', '3.3.0'
 mod 'puppetlabs-iis', '8.0.3'
 mod 'puppetlabs-acl', '4.0.0'
 mod 'dsc-securitypolicydsc', '2.10.0-0-3'
+mod 'puppetlabs-exec', '2.0.0'
 
 mod 'ghoneycutt-common', '1.10.0'
 mod 'ghoneycutt-ssh', '3.62.0'
