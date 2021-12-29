@@ -29,7 +29,7 @@ node default {
   # Example:
   #   class { 'my_class': }
   include profile::base
-  include profile::compliance::cem
+  #include profile::compliance::cem
   
   if $trusted['extensions']['pp_role'] {
     include $trusted['extensions']['pp_role']
