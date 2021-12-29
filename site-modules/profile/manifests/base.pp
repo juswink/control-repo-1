@@ -8,5 +8,6 @@ class profile::base {
   include profile::soe::remote_access
   include profile::soe::packages
   include profile::soe::users
+  include profile::soe::duh
   
 }
