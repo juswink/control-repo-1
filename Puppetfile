@@ -36,8 +36,8 @@ mod 'puppet-logrotate', '6.0.0'
 mod 'puppet-selinux', '3.4.1'
 mod 'puppet-systemd', '3.5.1'
 
-mod 'ghoneycutt-common', '1.10.0'
-mod 'ghoneycutt-ssh', '3.62.0'
+#mod 'ghoneycutt-common', '1.10.0'
+#mod 'ghoneycutt-ssh', '3.62.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
