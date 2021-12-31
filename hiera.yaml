@@ -12,6 +12,7 @@ hierarchy:
       - "nodes/webserver/nginx.yaml"
       - "nodes/webserver/iis.yaml"
       - "nodes/base.yaml"
+      - "compliance/cem.yaml"
       - "common.yaml"
   - name: "Admin password"
     lookup_key: eyaml_lookup_key
