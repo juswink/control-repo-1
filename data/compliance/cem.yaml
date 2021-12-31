@@ -1,0 +1,11 @@
+---
+cem_linux::benchmark: 'cis'
+cem_linux::config:
+  profile: 'server'
+  level: '1'
+
+cem_windows::framework: 'cis'
+cem_windows::config:
+  profile: 'member_server'
+  level: '1'    
+ 
