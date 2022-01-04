@@ -59,7 +59,7 @@ class profile::soe::firewall {
         #  description  => 'Inbound rule for HTTP. [TCP 80]',
         #}
     }
-    default: { fail ( "Too bad, so sad!\n" ) }
+    default: { notify { "Too bad, so sad!\n": } }
   }
   
 }
