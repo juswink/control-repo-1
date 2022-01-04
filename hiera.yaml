@@ -4,10 +4,6 @@ version: 5
 defaults:
   datadir: "data"
 
-backends:
-  - yaml
-  - eyaml
-
 hierarchy:
   - name: "Hiera eyaml data"
     lookup_key: eyaml_lookup_key
