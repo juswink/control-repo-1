@@ -1,5 +1,5 @@
 class profile::soe::packages {
-  
+
   if $facts['kernel'] == 'windows' {
       include chocolatey
   }
@@ -18,6 +18,7 @@ class profile::soe::packages {
           install_options => ['-y']
         }
       }
+      default:  { fail ( "Too bad, so sad!\n" ) }
     }
   }
 }

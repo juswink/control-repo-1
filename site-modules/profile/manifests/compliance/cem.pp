@@ -6,6 +6,7 @@ class profile::compliance::cem {
     }
     'windows':  {
       include profile::compliance::cem::windows
-    }  
+    }
+    default: { notify{"Too bad, so sad!\n":} }
   }
 }

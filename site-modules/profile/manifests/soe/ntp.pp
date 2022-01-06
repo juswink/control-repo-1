@@ -5,7 +5,7 @@ class profile::soe::ntp {
     #  case $facts['operatingsystem']['operatingsystemmajrelease'] {
     #    'CentOS', '8':  { 
           class { 'chrony':
-             servers => lookup('ntpservers'),
+            servers => lookup('ntpservers'),
           }
     #    }
     #    'CentOS', '7':  { 
@@ -17,11 +17,11 @@ class profile::soe::ntp {
     }
     'windows':  { 
         class { 'winntp':
-           servers => lookup('ntpservers'),
+          servers => lookup('ntpservers'),
         }
     }
-    
+
     default:  { fail ( "Too bad, so sad!\n" ) }
   }
-  
+
 }
