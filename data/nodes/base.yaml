@@ -3,3 +3,4 @@ ntpservers: [ "0.sg.pool.ntp.org", "1.sg.pool.ntp.org", "2.sg.pool.ntp.org", "3.
 motd: "Howdy Partner!\n"
 packages: [ "wget", "telnet" ]
 users: ["tom", "jerry" ]
+review::users: ["wily", "porky"]
