@@ -30,11 +30,11 @@ node default {
   #   class { 'my_class': }
   include profile::base
   #include profile::compliance::cem
-  
+
   if $trusted['extensions']['pp_role'] {
     include $trusted['extensions']['pp_role']
   } else {
-    notify { "No such role": }
+    notify { "No such role\n": }
   }
-  
+
 }

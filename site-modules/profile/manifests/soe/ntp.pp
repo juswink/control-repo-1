@@ -15,7 +15,7 @@ class profile::soe::ntp {
     #    }
     #  }
     }
-    'windows':  { 
+    'windows':  {
         class { 'winntp':
           servers => lookup('ntpservers'),
         }
