@@ -6,7 +6,7 @@ class profile::app::webserver {
     }
 
     'windows':  {
-      include profile::app::webserver::iis
+      #include profile::app::webserver::iis
     }
 
     default: { notify {'Platform not supported': } }
