@@ -1,8 +1,8 @@
 class profile::soe::remote_access {
   case $facts['kernel'] {
-    # 'Linux': {
+    'Linux': {
     #ssh::sshd_config_allowusers {}
-    #}
+    }
     'windows': {
       dsc_userrightsassignment { 'Allow log on through Remote Desktop Services':
         dsc_force       => true,
