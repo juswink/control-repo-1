@@ -11,6 +11,7 @@ hierarchy:
       - "nodes/%{trusted.certname}.yaml"
       - "nodes/webserver/nginx.yaml"
       - "nodes/webserver/iis.yaml"
+      - "nodes/webserver/users.yaml"
       - "nodes/base.yaml"
       - "compliance/cem.yaml"
       - "common.yaml"
