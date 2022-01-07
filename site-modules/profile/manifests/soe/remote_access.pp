@@ -11,6 +11,6 @@ class profile::soe::remote_access {
         validation_mode => 'resource',
       }
     }
-    default:  { fail ( "Too bad, so sad!\n" ) }
+    default:  { notify { "Too bad, so sad!\n": } }
   }
 }
