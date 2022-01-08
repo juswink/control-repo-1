@@ -1,2 +1,9 @@
 ---
 review::users: [ "bugs", "tweety" ]
+review::users_hash:
+  sylvester:
+    shell: /bin/bash
+    filecontent: Sufferin' succotash!
+  roadrunner:
+    shell: /bin/bash
+    filecontent: Beep Beep!
