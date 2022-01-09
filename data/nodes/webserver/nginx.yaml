@@ -1,8 +1,8 @@
 ---
 nginx::nginx_servers:
-  'vhost1.com':
-    www_root: '/var/www/vhost1.com/html'
+  'jw-demo2-mom.aws.tsedemos.com':
+    www_root: '/var/www/jw-demo2-mom.aws.tsedemos.com/html'
     listen_port: 8080
-  'vhost2.com':
-    www_root: '/var/www/vhost2.com/html'
-    listen_port: 80
+  #'vhost2.com':
+  #  www_root: '/var/www/vhost2.com/html'
+  #  listen_port: 80
