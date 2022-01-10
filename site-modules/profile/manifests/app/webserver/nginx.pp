@@ -12,5 +12,5 @@ class profile::app::webserver::nginx {
   #    listen_port => $options[listen_port],
   #    www_root    => $options[www_root],
   #  }
-  #}
+  }
 }
