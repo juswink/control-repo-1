@@ -6,7 +6,6 @@ class profile::app::webserver::nginx {
   $webservers_hash.each | String $domain, Hash $options | {
     file { "/var/www/${domain}":
       ensure  => directory,
-      #content => '<html>I love Puppet!</html>',
     }
 
     file { "/var/www/${domain}/index.html":
@@ -17,9 +16,9 @@ class profile::app::webserver::nginx {
     #notify { "${options}[www_root]\n":}
     #notify { "${options}[listen_port]\n":}
 
-  #  nginx::resource::server { $domain:
-  #    listen_port => $options[listen_port],
-  #    www_root    => $options[www_root],
-  #  }
+    nginx::resource::server { $domain:
+      listen_port => $options[listen_port],
+      www_root    => $options[www_root],
+    }
   }
 }
