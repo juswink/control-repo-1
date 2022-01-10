@@ -12,9 +12,6 @@ class profile::app::webserver::nginx {
       ensure  => present,
       content => '<html>I love Puppet!</html>',
     }
-    #notify { "${domain}\n":}
-    #notify { "${options}[www_root]\n":}
-    #notify { "${options}[listen_port]\n":}
 
     #nginx::resource::server { $domain:
     #  listen_port => $options[listen_port],
