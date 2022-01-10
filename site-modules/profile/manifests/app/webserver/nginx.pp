@@ -4,9 +4,9 @@ class profile::app::webserver::nginx {
 
   $webservers_hash = lookup('nginx::nginx_servers')#, Hash, {'strategy' => 'unique'}, {})
   $webservers_hash.each | String $domain, Hash $options | {
-    file { "/var/www/${domain}/index.html":
-      ensure  => file,
-      content => '<html>I love Puppet!</html>',
+    file { "/var/www/${domain}":
+      ensure  => directory,
+      #content => '<html>I love Puppet!</html>',
     }
     #notify { "${domain}\n":}
     #notify { "${options}[www_root]\n":}
