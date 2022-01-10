@@ -8,6 +8,11 @@ class profile::app::webserver::nginx {
       ensure  => directory,
       #content => '<html>I love Puppet!</html>',
     }
+
+    file { "/var/www/${domain}/index.html":
+      ensure  => present,
+      #content => '<html>I love Puppet!</html>',
+    }
     #notify { "${domain}\n":}
     #notify { "${options}[www_root]\n":}
     #notify { "${options}[listen_port]\n":}
