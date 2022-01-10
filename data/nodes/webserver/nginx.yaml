@@ -1,6 +1,6 @@
 ---
-nginx_servers:
-  jw-demo2-nix1.aws.tsedemos.com:
+nginx::nginx_servers:
+  'jw-demo2-nix1.aws.tsedemos.com':
     www_root: /var/www/jw-demo2-nix1/html
     listen_port: 8080
   #'vhost2.com':
