@@ -11,7 +11,7 @@ class profile::app::webserver::nginx {
 
     file { "/var/www/${domain}/index.html":
       ensure  => present,
-      #content => '<html>I love Puppet!</html>',
+      content => '<html>I love Puppet!</html>',
     }
     #notify { "${domain}\n":}
     #notify { "${options}[www_root]\n":}
