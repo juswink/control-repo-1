@@ -12,7 +12,7 @@ class profile::app::webserver::nginx {
     ensure  => file,
     content => '<html>I love Puppet!</html>',
   }
-  nginx::resource::server { "${domain}":
+  nginx::resource::server { $domain:
     listen_port => $options[listen_port],
     www_root    => $options[www_root],
   }
