@@ -33,6 +33,7 @@ mod 'puppetlabs-augeas_core', '1.2.0'
 mod 'puppet-logrotate', '6.0.0'
 mod 'puppet-selinux', '3.4.1'
 mod 'puppet-systemd', '3.5.1'
+mod 'puppetlabs-comply', '2.2.1'
 
 #mod 'ghoneycutt-common', '1.10.0'
 #mod 'ghoneycutt-ssh', '3.62.0'
