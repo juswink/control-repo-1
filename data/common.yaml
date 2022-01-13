@@ -1,3 +1,9 @@
 ---
 message: "This node is using common data"
 dnsservers: [ "10.0.0.1", "10.0.0.2" ]
+
+pe_r10k::forge_settings:
+  authorization_token: 'Bearer 1a5659e21d83616a1ab75fb334846dae243d39c709833341eaa5548753fc8342'
+  baseurl: 'https://forgeapi.puppet.com'
+puppet_enterprise::master::code_manager::forge_settings:
+  authorization_token: 'Bearer 1a5659e21d83616a1ab75fb334846dae243d39c709833341eaa5548753fc8342'
