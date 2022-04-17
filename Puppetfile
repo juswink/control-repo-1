@@ -45,6 +45,8 @@ mod 'puppetlabs-reboot', '4.1.0'
 mod 'puppetlabs-hocon', '1.1.0'
 mod 'puppetlabs-translate', '2.2.0'
 mod 'puppetlabs-cd4pe_jobs', '1.6.0'
+mod 'puppetlabs-netdev_stdlib', '0.23.0'
+mod 'puppetlabs-cisco_ios', '2.0.0'
 
 #mod 'ghoneycutt-common', '1.10.0'
 #mod 'ghoneycutt-ssh', '3.62.0'
